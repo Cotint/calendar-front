@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'sans';
+    src: url('fonts/IRANSans/IRANSansWeb_Light.woff') format('woff'),
+    url(fonts/IRANSans/IRANSansWeb_Light.eot) format('eot'),
+    url(fonts/IRANSans/IRANSansWeb_Light.eot?#iefix) format('embedded-opentype'),
+    url('fonts/IRANSans/IRANSansWeb_Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: 'sansMedium';
+    src: url('fonts/IRANSansMedium/IRANSansWeb_Medium.woff') format('woff'),
+    url(fonts/IRANSansMedium/IRANSansWeb_Medium.eot) format('eot'),
+    url(fonts/IRANSansMedium/IRANSansWeb_Medium.eot?#iefix) format('embedded-opentype'),
+    url('fonts/IRANSansMedium/IRANSansWeb_Medium.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'sansBold';
+    src: url('fonts/IRANSansBold/IRANSansWeb_Bold.woff') format('woff'),
+    url(fonts/IRANSansBold/IRANSansWeb_Bold.eot) format('eot'),
+    url(fonts/IRANSansBold/IRANSansWeb_Bold.eot?#iefix) format('embedded-opentype'),
+    url('fonts/IRANSansBold/IRANSansWeb_Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+body {
+
+    overflow-x: hidden;
+    font-family: sansMedium;
+}
+
+body,
+html,
+label,
+p,
+span,
+h1, h2, h3, h4, h5, h6 {
+    font: 12px/25px sansMedium, tahoma;
+}
+
+a {
+    text-decoration: none;
+}
+
+.date-piker {
+    margin-top: 100px;
+    width: 100%;
+    border: 1px solid #dddddd;
+    min-height: 520px;
+    height: auto;
+}
+
+.date-piker-text {
+    width: 100%;
+    border: 1px solid #dddddd;
+    height: 520px;
+    margin-top: 100px;
+}
+.date-piker-text p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #999;
+    position: relative;
+    right: 10px;
+}
+.date-piker-text span{
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    right: -10px;
+}
+.red-text{
+    color: #b20000 !important;
+}
+.date-text {
+    width: 94%;
+    border-bottom: 1px solid #dddddd;
+    height: 80px;
+    margin-right: 20px;
+}
+.date-text h2{
+    position: absolute;
+    font-size: 24px;
+    margin-right: 4px;
+    margin-top: 28px;
+    color: #239963;
+
+}
+.font-date-vacations-default{
+    font-size: 20px;
+    text-align: center !important;
+    color: #b20000;
+    opacity: 0.3;
+}
+.btn-box-vacations-default{
+    width: 13%;
+    height: 51px;
+    display: inline-block;
+    margin-right: 2px;
+    margin-top: 7px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.font-date-left-vacations-default{
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: center !important;
+    margin-top: -5px;
+    color: #ff3232;
+    opacity: 0.3;
+}
+.font-date-right-vacations-default{
+    padding-right: 5px;
+    font-size: 14px;
+    text-align: center !important;
+    margin-top: -5px;
+    color: #ff3232;
+    opacity: 0.3;
+}
+.date-header {
+    height: 90px;
+    border-bottom: 1px solid #dddddd;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.date-side {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+    background-color: #555;
+}
+
+.date-content {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 300px;
+    height: auto;
+}
+
+.date-footer {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+    background-color: #239963;
+    cursor: pointer;
+}
+.date-footer:hover {
+    background-color: #319943;
+    transition: all 1s;
+}
+.date-footer p{
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top:5px;
+}
+
+.tag-p-right {
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.tag-p-right i {
+    position: relative;
+    left: 8px;
+    top: 2px;
+    color: #239963;
+}
+
+.tag-p-left {
+    margin-top: 30px;
+    float: left;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.tag-p-left i {
+    position: relative;
+    right: 8px;
+    top: 2px;
+    color: #239963;
+}
+
+.title-date {
+    margin-top: 13px;
+    margin-bottom: -1px;
+    color: #239963;
+    font-size: 16px;
+}
+
+.title-content {
+    margin-bottom: -1px;
+}
+
+.color-footer-date {
+    color: #999;
+}
+
+.left-tag-i {
+    position: relative;
+    left: 10px;
+}
+
+.right-tag-i {
+    position: relative;
+    right: 15px;
+}
+
+.date-side ul {
+    display: inline;
+    margin-right: -60px;
+}
+
+.date-side li {
+    display: inline;
+    color: #fff;
+    list-style: none;
+    font-size: 15px;
+    margin-right:44px;
+    position: relative;
+    top:5px;
+}
+.btn-box{
+    width: 13%;
+    height: 51px;
+    display: inline-block;
+    margin-right: 2px;
+    margin-top: 7px;
+}
+.font-date{
+    font-size: 20px;
+    text-align: center !important;
+}
+.font-date-left{
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: center !important;
+    margin-top: -5px;
+    color: #999;
+}
+.font-date-right{
+    padding-right: 5px;
+    font-size: 14px;
+    text-align: center !important;
+    margin-top: -5px;
+    color: #999;
+}
+.btn-box-default{
+    width: 13%;
+    height: 51px;
+    display: inline-block;
+    margin-right: 2px;
+    margin-top: 7px;
+}
+.font-date-default{
+    font-size: 20px;
+    text-align: center !important;
+    color: #cccccc;
+}
+.font-date-left-default{
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: center !important;
+    margin-top: -5px;
+    color: #ddd;
+}
+.font-date-right-default{
+    padding-right: 5px;
+    font-size: 14px;
+    text-align: center !important;
+    margin-top: -5px;
+    color: #ddd;
+}
+.btn-box-vacations{
+    width: 13%;
+    height: 51px;
+    display: inline-block;
+    margin-right: 2px;
+    margin-top: 7px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.font-date-vacations{
+    font-size: 20px;
+    text-align: center !important;
+    color: #b20000
+
+}
+.font-date-left-vacations{
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: center !important;
+    margin-top: -5px;
+    color: #ff3232;
+}
+.font-date-right-vacations{
+    padding-right: 5px;
+    font-size: 14px;
+    text-align: center !important;
+    margin-top: -5px;
+    color: #ff3232;
+}
