@@ -79,9 +79,12 @@ a {
     overflow: auto;
     overflow-x: hidden;
 }
+.scroll-cotint::-webkit-scrollbar {
+    width: 1px;
+}
 .cotint-date{
     border: 1px solid #ccc;
-    width: 15.222222%;
+    width: 16%;
     display: inline-block;
     margin-top: 5px;
 }
