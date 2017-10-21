@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-rtl.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/scrollbar.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
                         <p class="tag-p-right"> <i class="fa fa-arrow-right" aria-hidden="true"></i> ماه قبل</p>
                     </div>
                     <div class="col-md-6 col-xs-6">
-                        <p class="text-center title-date"><i class="fa fa-arrow-down left-tag-i" aria-hidden="true"></i>    ابان ۱۳۹۶<i class="fa fa-arrow-down right-tag-i" aria-hidden="true"></i></p>
+                        <p class="text-center title-date"><i class="fa fa-arrow-down left-tag-i" aria-hidden="true"></i>   <span class="date-append font-size">ابان</span> <span class="date-append-c font-size">۱۳۹۶</span> <i class="fa fa-arrow-down right-tag-i" aria-hidden="true"></i></p>
                         <p class="text-center title-content">October - November 2017</p>
                         <p class="text-center color-footer-date">صفر ربیع الاول - ۱۴۳۹</p>
                     </div>
@@ -117,7 +118,7 @@
                     <p class="font-date-left pull-left">۰۷</p>
                     <p class="font-date-right pull-right">27</p>
                 </div>
-                <div class="btn-box">
+                <div class="btn-box-today">
                     <p class="font-date text-center">۱۴</p>
                     <p class="font-date-left pull-left">۰۷</p>
                     <p class="font-date-right pull-right">27</p>
@@ -217,7 +218,7 @@
                     <p class="font-date-left-vacations-default pull-left">۰۷</p>
                     <p class="font-date-right-vacations-default pull-right">27</p>
                 </div>
-
+<input class="hidden"  id="valu-c"  type="text" name="valu-c">
             </div>
             <div class="date-footer">
                 <p class="text-center">برو به امروز</p>
@@ -226,9 +227,8 @@
     </div>
     <div class="col-md-7 col-xs-12">
         <div class="date-piker-text">
-            <div class="date-text">
-                <h2>مناسبت های ماه : ابان</h2>
-            </div>
+            <div class="date-text"><h2>مناسبت های ماه : ابان</h2></div>
+            <div class="mCustomScrollbar scroll-c" data-mcs-theme="minimal-dark">
             <p><span>۱ ابان </span>روز امار برنامه ریزی</p>
             <p><span>۷ ابان </span>روز امار برنامه ریزی</p>
             <p><span>۲۶ ابان </span>روز امار برنامه ریزی</p>
@@ -241,10 +241,174 @@
             <p><span>۴ ابان </span>روز امار برنامه ریزی</p>
             <p class="red-text"><span class="red-text"`>۴ ابان </span>روز امار برنامه ریزی</p>
             <p><span>۴ ابان </span>روز امار برنامه ریزی</p>
+            <p><span>۴ ابان </span>روز امار برنامه ریزی</p>
+            <p><span>۴ ابان </span>روز امار برنامه ریزی</p>
+            <p><span>۴ ابان </span>روز امار برنامه ریزی</p>
+            <p><span>۴ ابان </span>روز امار برنامه ریزی</p>
+            <p><span>۴ ابان </span>روز امار برنامه ریزی</p>
+            <p><span>۴ ابان </span>روز امار برنامه ریزی</p>
+            </div>
         </div>
     </div>
-</div>
 
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/scrollbar.min.js"></script>
+<script>
+    $(".date-append").click(function () {
+        $('.click-date').addClass('hidden');
+        $(this).append("<div class=\"click-date\">\n" +
+            "    <div class=\"row\">\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(1)\">\n" +
+            "        <a href='#'><p>فروردین </p></a>\n" +
+            "    </div>\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(2)\">\n" +
+            "        <a href='#'><p>اردیبهشت</p></a>\n" +
+            "    </div>\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(3)\">\n" +
+            "        <a href='#'><p>خرداد</p></a>\n" +
+            "    </div>\n" +
+            "<div class=\"col-md-c col-xs-c show-p\"onclick=\"date(4)\">\n" +
+            "        <a href='#'><p>تیر</p></a>\n" +
+            "    </div>\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(5)\">\n" +
+            "        <a href='#'><p>مرداد</p></a>\n" +
+            "    </div>\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(6)\">\n" +
+            "        <a href='#'><p>شهریور</p></a>\n" +
+            "    </div>\n" +
+            "<div class=\"col-md-c col-xs-c show-p\" onclick=\"date(7)\">\n" +
+            "        <a href='#'><p>مهر</p></a>\n" +
+            "    </div>\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(8)\">\n" +
+            "        <a href='#'><p>ابان</p></a>\n" +
+            "    </div>\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(9)\" >\n" +
+            "        <a href='#'><p>اذر</p></a>\n" +
+            "    </div>\n" +
+            "<div class=\"col-md-c col-xs-c show-p\" onclick=\"date(10)\">\n" +
+            "        <a href='#'><p>دی</p></a>\n" +
+            "    </div>\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(11)\">\n" +
+            "        <a href='#'><p>بهمن</p></a>\n" +
+            "    </div>\n" +
+            "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(12)\">\n" +
+            "        <a href='#'><p>اسفند</p></a>\n" +
+            "    </div>\n" +
+            "    </div>\n" +
+            "</div>");
+    });
+    $(".date-append-c").click(function () {
+        $('.cotint-date').addClass('hidden');
+        $(this).append(
+            "<div class=\"box-c mCustomScrollbar scroll-cotint\" data-mcs-theme=\"minimal-dark\">\n" +
+            "    <div class=\"row\">\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "        <div class=\"cotint-date\">\n" +
+            "            <a href='#'><p>1396</p></a>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "</div>");
+    });
+
+</script>
+<script>
+    function date(id)
+    {
+        if(id == '')
+        {
+            alert("empty");
+        }
+        else
+        {
+            $( "div:eq( id )" )
+            $('#valu-c').val(id);
+
+        }
+    }
+</script>
+<script>
+    (function ($) {
+        $(window).on("load", function () {
+            $(".scroll-c").mCustomScrollbar({
+                axis: "yx"
+            });
+            $(".scroll-cotint").mCustomScrollbar({
+                axis: "yx"
+            });
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
