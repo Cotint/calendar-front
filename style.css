@@ -382,11 +382,25 @@ a {
     margin-right: 2px;
     margin-top: 7px;
 }
+.slide-responsive {
+    width: 13%;
+    height: 51px;
+    display: inline-block;
+    margin-right: 2px;
+    margin-top: 7px;
+}
 
 .font-date-default {
     font-size: 20px;
     text-align: center !important;
     color: #cccccc;
+}
+.slide-text {
+    font-size: 15px;
+    text-align: center !important;
+    color: #cccccc;
+    position: relative;
+    top: -2px;
 }
 .font-date-left-default {
     font-size: 13px;
