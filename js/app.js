@@ -171,10 +171,10 @@ $(".date-append-c").click(function () {
 (function ($) {
     $(window).on("load", function () {
         $(".scroll-c").mCustomScrollbar({
-            axis: "yx"
+            axis: "y"
         });
         $(".scroll-cotint").mCustomScrollbar({
-            axis: "yx"
+            axis: "y"
         });
     });
 })(jQuery);
