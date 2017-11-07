@@ -52,10 +52,10 @@ $(".date-append").click(function () {
         "        <a href='#'><p>مهر</p></a>\n" +
         "    </div>\n" +
         "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(8)\">\n" +
-        "        <a href='#'><p>ابان</p></a>\n" +
+        "        <a href='#'><p>آبان</p></a>\n" +
         "    </div>\n" +
         "    <div class=\"col-md-c col-xs-c show-p\" onclick=\"date(9)\" >\n" +
-        "        <a href='#'><p>اذر</p></a>\n" +
+        "        <a href='#'><p>آذر</p></a>\n" +
         "    </div>\n" +
         "<div class=\"col-md-c col-xs-c show-p\" onclick=\"date(10)\">\n" +
         "        <a href='#'><p>دی</p></a>\n" +
